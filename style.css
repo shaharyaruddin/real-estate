@@ -109,7 +109,7 @@ body {
     position: relative;
     padding: 0vw 8vw;
     color: #fff;
-    background-color: #0a3cce;
+background-color: #1696FF; /* SkyBlue */
 }
 #page2>h2{
     margin-bottom: 3vw;
@@ -142,7 +142,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #1137ca;
+    background-color: #1696FF;
     font-family: a;
 }
 #page4>h3{
@@ -175,7 +175,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #0a3cce;
+    background-color: #1696FF;
     flex-direction: column;
     font-family: a;
 }
@@ -196,7 +196,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #0a3cce;
+    background-color: #1696FF;
 }
 #page7>canvas{
     position: relative;
@@ -229,7 +229,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #0a3cce;
+    background-color: #1696FF;
 }
 #page8>video{
     height: 100%;
@@ -262,7 +262,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #0a3cce;
+    background-color: #1696FF;
 }
 .left9{
     height: 100%;
@@ -300,7 +300,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #0a3cce;
+    background-color: #1696FF;
 }
 .right10{
     height: 100%;
@@ -382,7 +382,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-color: #02268e;
+    background-color: #1696FF;
 }
 .page12-inner{
     position: absolute;
@@ -459,7 +459,7 @@ body {
 .center14{
     height: 0%;
     width: 100%;
-    background-color: #0a3cce;
+    background-color: #1696FF;
     position: absolute;
     left: 50%;
     top: 50%;

@@ -3,150 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Luxury Estates</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <div id="main">
-        <div data-scroll data-scroll-speed="-5" id="page1">
-            <nav>
-                <img src="./Screenshot 2023-05-30 220719.png" alt="">
-                <div id="right-nav">
-                    <button>Book a Demo</button>
-                    <button><i class="ri-menu-fill"></i></button>
+    <div id="main" class="relative overflow-hidden bg-ivory">
+        <div data-scroll data-scroll-speed="-5" id="page1" class="relative h-screen w-screen">
+            <nav class="absolute flex items-center justify-between px-6 h-[10vh] w-full">
+                <img src="./Screenshot 2023-05-30 220719.png" alt="Luxury Estates Logo" class="mt-[-1.7vw] w-[9%]">
+                <div id="right-nav" class="flex space-x-4">
+                    <button class="px-4 py-2 rounded-full bg-teal-600 border border-gray-300 text-white font-a text-sm hover:bg-teal-500 transition-colors">Schedule a Viewing</button>
+                    <button class="px-4 py-2 rounded-full bg-teal-600 border border-gray-300 text-white hover:bg-teal-500 transition-colors"><i class="ri-menu-fill"></i></button>
                 </div>
             </nav>
-            <div class="bottom-page1">
-                <h1>Experience Real  <br> Estate Agility</h1>
-                <div class="bottom-page1-inner">
-                    <h4>Create a digital twin of your existing building <br> and release the potential of Web3.</h4>
-                    <button>LEARN MORE</button>
+            <div class="bottom-page1 absolute bottom-[5%] left-[10%] h-[35vh] w-[50vw]">
+                <h1 class="font-a text-5xl md:text-6xl lg:text-7xl font-light leading-tight text-gray-800">Discover Premium <br> Real Estate</h1>
+                <div class="bottom-page1-inner absolute bottom-0 h-[35%] w-full flex items-center justify-between">
+                    <h4 class="font-a text-sm md:text-base lg:text-lg font-light text-gray-500">Unlock the potential of your property with our <br> innovative digital solutions.</h4>
+                    <button class="px-4 py-2 rounded-full bg-teal-600 text-white font-b text-base hover:bg-teal-500 transition-colors">Learn More</button>
                 </div>
             </div>
-            <video src="https://thisismagma.com/wp-content/themes/magma/assets/home/hero/1.mp4?2" autoplay loop muted ></video>
+            <video class="h-full w-full object-cover filter brightness-200" src="https://thisismagma.com/wp-content/themes/magma/assets/home/hero/1.mp4?2" autoplay loop muted></video>
         </div>
-        <div id="page2">
-            <h2>CERTIFY YOUR BUILDING AS A DIGITAL TWIN TOKEN (DTT)</h2>
-            <h1>The Digital Twin Token is a unique digital asset backed by property data. Magma combines your building’s components and systems essential information into a DTT.
-            </h1>
+        <div id="page2" class="flex flex-col items-start justify-between h-screen w-screen px-8 py-16 md:px-16 bg-teal-50">
+            <h2 class="font-a font-light mb-6 text-xl md:text-2xl text-gray-600">CREATE A DIGITAL PROPERTY PROFILE</h2>
+            <h1 class="font-a font-light leading-snug w-[90%] text-3xl md:text-4xl lg:text-5xl text-teal-600">Our platform transforms your property into a digital asset, integrating essential data for enhanced value and streamlined transactions.</h1>
         </div>
-        <div id="page3">
-            <canvas></canvas>
+        <div id="page3" class="relative h-screen w-screen">
+            <canvas class="min-h-screen w-screen filter brightness-200" style="background-color: #E6F0FA"></canvas>
         </div>
-        <div id="page4">
-            <h3>CONNECT THE BUILDING'S TWIN TO YOUR STAKEHOLDERS</h3>
-            <h1>Users connect directly to the DTT without any intermediaries. As Stakeholder, they have the power to upload and verify information that enriches the Digital Twin Token. A Stakeholder's ability to access validated-data to perform tasks depends on their specific role.</h1>
+        <div id="page4" class="flex flex-col items-start justify-between h-screen w-screen bg-ivory py-20">
+            <h3 class="ml-[5vw] mb-4 font-a font-light text-xl md:text-2xl text-gray-700">CONNECT WITH PROPERTY STAKEHOLDERS</h3>
+            <h1 class="ml-[5vw] w-[80%] font-a font-light text-2xl md:text-3xl lg:text-4xl text-teal-600">Engage directly with buyers, agents, and managers to share verified property data, enabling efficient collaboration.</h1>
         </div>
-        <div id="page5">
-            <canvas></canvas>
+        <div id="page5" class="relative h-screen w-screen">
+            <canvas class="min-h-screen w-screen filter brightness-200" style="background-color: #E6F0FA"></canvas>
         </div>
-        <div id="page6">
-            <h3>INCREASE YOUR DIGITAL TWIN TOKEN’S VALUE</h3>
-            <h1>DTT data increases the value of your digital asset by lowering operational costs, improving energy use, assisting commercialization, and boosting the liquidity of your building.</h1>
+        <div id="page6" class="flex flex-col items-start justify-between h-screen w-screen bg-teal-50 py-10">
+            <h3 class="ml-[10%] mb-4 font-a font-light text-xl md:text-2xl text-gray-600">BOOST YOUR PROPERTY’S VALUE</h3>
+            <h1 class="ml-[10%] w-[80%] font-a font-light text-2xl md:text-3xl lg:text-4xl text-teal-600">Enhance your asset’s worth by optimizing operations, reducing costs, and improving marketability with our digital tools.</h1>
         </div>
-        <div id="page7">
-            <div class="page7-cir">
-                <div class="page7-cir-inner"></div>
+        <div id="page7" class="relative h-screen w-screen bg-teal-50">
+            <div class="page7-cir absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 h-[30vw] w-[30vw] rounded-full border border-teal-600 bg-transparent flex items-center justify-center">
+                <div class="page7-cir-inner h-[70%] w-[70%] rounded-full border border-teal-600 bg-transparent"></div>
             </div>
-            <canvas></canvas>
+            <canvas class="min-h-screen w-screen filter brightness-200" style="background-color: #E6F0FA"></canvas>
         </div>
-        <div id="page8">
-            <div class="page8-bottom">
-                <h1>Magma DTT</h1>
-                <button>LEARN MORE</button>
+        <div id="page8" class="relative h-screen w-screen bg-teal-50">
+            <div class="page8-bottom absolute bottom-[5%] left-1/2 transform -translate-x-1/2 text-center font-a">
+                <h1 class="text-teal-700 mb-6 text-4xl md:text-5xl lg:text-6xl font-bold">Luxury Estates</h1>
+                <button class="px-6 py-3 rounded-full bg-teal-600 text-white font-semibold hover:bg-teal-500 transition-colors">Explore Now</button>
             </div>
-            <video src="https://thisismagma.com/wp-content/themes/magma/assets/home/glass/1.webm?2"autoplay loop muted></video>
+            <video class="h-full w-full object-cover filter brightness-75 contrast-110" src="https://thisismagma.com/wp-content/themes/magma/assets/home/glass/1.webm" autoplay loop muted></video>
         </div>
-        <div id="page9">
-            <div class="left9">
-                <h1>What is <br> Magma?</h1>
+        <div id="page9" class="flex flex-col md:flex-row h-screen w-screen bg-ivory">
+            <div class="left9 relative h-[40%] md:h-full md:w-[40%] font-a">
+                <h1 class="absolute top-[40%] md:right-[5%] transform -translate-y-1/2 text-4xl md:text-5xl lg:text-6xl font-light text-gray-800 leading-tight text-center md:text-right">What is <br> Luxury Estates?</h1>
             </div>
-            <div class="right9">
-                <div class="right9-center"></div>
+            <div class="right9 relative h-[60%] md:h-full md:w-[60%]">
+                <div class="right9-center absolute top-1/2 left-[5%] md:left-[5%] transform -translate-y-1/2 h-[80%] md:h-[50%] w-[90%] md:w-[85%] rounded-lg bg-cover bg-[url('https://thisismagma.com/wp-content/uploads/2023/04/magma.wp2.cubdev.com-home-1.jpeg')] filter brightness-90 contrast-120"></div>
             </div>
         </div>
-        <div id="page10">
-            <div class="right10">
-                <div class="right10-inner">
-                    <h1>Web3 platform
-                    </h1>
-                    <p>Magma is a Web3 platform for all real estate stakeholders, which provides users with the ability to manage interactions between physical and digital assets through unique, and collectively generated, 3D representations of their buildings.</p>
+        <div id="page10" class="relative h-screen w-screen bg-teal-50">
+            <div class="right10 relative h-full w-full md:w-[60%] md:left-[40%] px-6 md:px-0">
+                <div class="right10-inner flex flex-col items-start h-[33.3%] w-full font-a text-gray-800">
+                    <h1 class="text-2xl md:text-3xl font-semibold text-teal-600">Advanced Real Estate Platform</h1>
+                    <p class="mt-4 text-sm md:text-base w-[90%] md:w-[80%] text-gray-600">Luxury Estates empowers property owners and stakeholders to manage assets through a seamless, technology-driven platform.</p>
                 </div>
-                <div class="right10-inner">
-                    <h1>The Digital Twin Token: The building’s unique digital copy</h1>
-                    <p>Magma uses blockchain technology to record essential data, which enables transparent, traceable, and immutable streams of information to be readily accessible to its users. Magma smart contracts are built with this blockchain data to expedite tasks like requests for proposals, lease agreements, and services arrangements.</p>
+                <div class="right10-inner flex flex-col items-start h-[33.3%] w-full font-a text-gray-800">
+                    <h1 class="text-2xl md:text-3xl font-semibold text-teal-600">Digital Property Records</h1>
+                    <p class="mt-4 text-sm md:text-base w-[90%] md:w-[80%] text-gray-600">Using cutting-edge technology, we create secure, transparent digital records for properties to simplify transactions and management.</p>
                 </div>
-                <div class="right10-inner">
-                    <h1>An Index of digitization</h1>
-                    <p>The Magma Index provides valuable insight for decision-making regarding data-sharing, service-creating, and operational/environmental expectations.</p>
+                <div class="right10-inner flex flex-col items-start h-[33.3%] w-full font-a text-gray-800">
+                    <h1 class="text-2xl md:text-3xl font-semibold text-teal-600">Property Performance Insights</h1>
+                    <p class="mt-4 text-sm md:text-base w-[90%] md:w-[80%] text-gray-600">Access real-time data and analytics to make informed decisions about property investments and operations.</p>
                 </div>
             </div>
         </div>
-        <div id="page11">
-            <h1>Recent Blog</h1>
-            <div class="page11-inner">
-                <div class="left11">
-                    <img src="https://thisismagma.com/wp-content/uploads/2023/05/thisismagma.com-magma-a-la-3eme-edition-du-tech-talk-de-cbre-france-1684942208038.jpeg" alt="">
+        <div id="page11" class="relative h-[140vh] md:h-[110vh] w-screen bg-ivory font-a">
+            <h1 class="absolute top-[5%] left-[10%] text-4xl md:text-5xl font-light text-gray-800">Recent News</h1>
+            <div class="page11-inner flex flex-col md:flex-row top-[18%] relative mb-4 h-[30%] md:h-[24%] w-full px-4 md:px-0">
+                <div class="left11 relative h-[50%] md:h-full w-full md:w-[40%] md:left-[5%] rounded-lg overflow-hidden">
+                    <img src="https://thisismagma.com/wp-content/uploads/2023/05/thisismagma.com-magma-a-la-3eme-edition-du-tech-talk-de-cbre-france-1684942208038.jpeg" alt="Luxury Property" class="h-full w-full object-cover filter brightness-90 contrast-120">
                 </div>
-                <div class="right11">
-                    <h4>MAY 30,2023</h4>
-                    <h1>Magma At CBRE France's 3rd Tech Talk</h1>
-
-                </div>
-            </div>
-            <div class="page11-inner">
-                <div class="left11">
-                    <img src="https://thisismagma.com/wp-content/uploads/2023/05/thisismagma.com-workshop-blockchain-et-actif-digitaux-sba-16-min-scaled.jpg" alt="">
-                </div>
-                <div class="right11">
-                    <h4>MAY 30,2023</h4>
-                    <h1>Magma At CBRE France's 3rd Tech Talk</h1>
-
+                <div class="right11 relative md:absolute md:left-[50%] pt-4 md:pt-10 h-[50%] md:h-full w-full md:w-[50%] text-gray-800">
+                    <h4 class="font-light text-gray-500">JUNE 1, 2025</h4>
+                    <h1 class="text-xl md:text-2xl font-semibold">Luxury Estates at Global Property Expo</h1>
                 </div>
             </div>
-            <div class="page11-inner">
-                <div class="left11">
-                    <img src="https://thisismagma.com/wp-content/uploads/2023/03/magma.wp2.cubdev.com-exploring-the-potential-of-real-estate-tokenization-digital-twins-magma.png" alt="">
+            <div class="page11-inner flex flex-col md:flex-row top-[18%] relative mb-4 h-[30%] md:h-[24%] w-full px-4 md:px-0">
+                <div class="left11 relative h-[50%] md:h-full w-full md:w-[40%] md:left-[5%] rounded-lg overflow-hidden">
+                    <img src="https://thisismagma.com/wp-content/uploads/2023/05/thisismagma.com-workshop-blockchain-et-actif-digitaux-sba-16-min-scaled.jpg" alt="Tech Workshop" class="h-full w-full object-cover filter brightness-90 contrast-120">
                 </div>
-                <div class="right11">
-                    <h4>MAY 30,2023</h4>
-                    <h1>Magma At CBRE France's 3rd Tech Talk</h1>
-
+                <div class="right11 relative md:absolute md:left-[50%] pt-4 md:pt-10 h-[50%] md:h-full w-full md:w-[50%] text-gray-800">
+                    <h4 class="font-light text-gray-500">MAY 25, 2025</h4>
+                    <h1 class="text-xl md:text-2xl font-semibold">Advancing Real Estate with Technology</h1>
                 </div>
             </div>
-          
-        </div>
-        <div id="page12">
-            <div class="page12-inner">
-                <h1>Featured In</h1>
-                <p>Thrilled to have been featured in several prominent media <br> outlets and leading professionals across the world’s best <br> real estate and web3 institutions.</p>
+            <div class="page11-inner flex flex-col md:flex-row top-[18%] relative mb-4 h-[30%] md:h-[24%] w-full px-4 md:px-0">
+                <div class="left11 relative h-[50%] md:h-full w-full md:w-[40%] md:left-[5%] rounded-lg overflow-hidden">
+                    <img src="https://thisismagma.com/wp-content/uploads/2023/03/magma.wp2.cubdev.com-exploring-the-potential-of-real-estate-tokenization-digital-twins-magma.png" alt="Market Insights" class="h-full w-full object-cover filter brightness-90 contrast-120">
+                </div>
+                <div class="right11 relative md:absolute md:left-[50%] pt-4 md:pt-10 h-[50%] md:h-full w-full md:w-[50%] text-gray-800">
+                    <h4 class="font-light text-gray-500">MAY 15, 2025</h4>
+                    <h1 class="text-xl md:text-2xl font-semibold">2025 Property Market Trends</h1>
+                </div>
             </div>
         </div>
-        <div id="page13">
-            <h1>Become an
-                <br>
-                early adopter</h1>
-                <button>BOOK A DEMO</button>
+        <div id="page12" class="relative h-screen w-screen bg-red-500">
+            <div class="page12-inner absolute top-[20%] right-[10%] text-gray-800 font-a">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-light text-teal-600">Featured In</h1>
+                <p class="text-sm md:text-base lg:text-lg text-gray-600">Recognized by leading real estate and technology publications <br> for our innovative property solutions.</p>
+            </div>
         </div>
-        <div id="page14">
-            <div class="page14-inner">
-                <h1>Twitter</h1>
-                <i class="ri-arrow-right-up-line"></i>
-                <div class="center14"></div>
+        <div id="page13" class="relative h-[50vh] w-screen bg-teal-600 text-white font-a px-10 py-14">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-light leading-tight">Become a <br> Property Innovator</h1>
+            <button class="mt-4 px-6 py-3 rounded-full bg-ivory text-teal-600 font-semibold hover:bg-gray-100 transition-colors">Schedule a Consultation</button>
+        </div>
+        <div id="page14" class="relative h-[60vh] w-screen bg-teal-600">
+            <div class="page14-inner relative flex items-center justify-between px-8 h-[33.3%] w-full text-white border-t border-b border-teal-200 font-a">
+                <h1 class="text-2xl md:text-3xl font-light z-10">Twitter</h1>
+                <i class="ri-arrow-right-up-line text-2xl md:text-3xl z-10"></i>
+                <div class="center14 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 h-0 w-full bg-teal-500 transition-all duration-500"></div>
             </div>
-            <div class="page14-inner">
-                <h1>LinkedIn</h1>
-                <i class="ri-arrow-right-up-line"></i>
-                <div class="center14"></div>
-
+            <div class="page14-inner relative flex items-center justify-between px-8 h-[33.3%] w-full text-white border-b border-teal-200 font-a">
+                <h1 class="text-2xl md:text-3xl font-light z-10">LinkedIn</h1>
+                <i class="ri-arrow-right-up-line text-2xl md:text-3xl z-10"></i>
+                <div class="center14 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 h-0 w-full bg-teal-500 transition-all duration-500"></div>
             </div>
-            <div class="page14-inner">
-                <h1>Instagram</h1>
-                <i class="ri-arrow-right-up-line"></i>
-                <div class="center14"></div>
-
+            <div class="page14-inner relative flex items-center justify-between px-8 h-[33.3%] w-full text-white border-b border-teal-200 font-a">
+                <h1 class="text-2xl md:text-3xl font-light z-10">Instagram</h1>
+                <i class="ri-arrow-right-up-line text-2xl md:text-3xl z-10"></i>
+                <div class="center14 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 h-0 w-full bg-teal-500 transition-all duration-500"></div>
             </div>
         </div>
     </div>
